@@ -4,17 +4,8 @@ import Twitter from './assets/social-media-icons/twitter_32x32.png';
 import Email from './assets/social-media-icons/email_32x32.png';
 
 
-const Navbar = ({ accounts, setAccounts }) => {
+const Navbar = ({ accounts, connectAccount }) => {
     const isConnected = Boolean(accounts[0]);
-
-    async function connectAccount() {
-        if (window.ethereum) {
-            const accounts = await window.ethereum.request({
-                method: "eth_requestAccounts"
-            });
-            setAccounts(accounts);
-        }
-    }
 
     return (
         <div className="flex justify-between items-center">
