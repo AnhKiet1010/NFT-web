@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/*.json
 
 # testing
 /coverage
@@ -31,4 +32,3 @@ typechain
 #Hardhat files
 cache
 artifacts
-./src/*.json
